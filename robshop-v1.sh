@@ -4,12 +4,12 @@ amiId="ami-0055977a6e828a4f4"
 instanceType="t3.micro"
 domainName="daws92.store"
 hostedZoneID="Z01595761DU804AX48D6A"
-user_id=$(id -u)
+# user_id=$(id -u)
 
-if [ $user_id -ne 0 ]; then
-    echo "You are not root user, Please run the script as root user"
-    exit 1
-fi
+# if [ $user_id -ne 0 ]; then
+#     echo "You are not root user, Please run the script as root user"
+#     exit 1
+# fi
 
 for instance in $@
     do
